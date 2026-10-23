@@ -58,15 +58,14 @@ The API will be available at:
 
 The SQLite database is created locally when the application starts.
 
-API Endpoints
+* POST `/register` – Register a participant
 
-Method| Endpoint                                | Description
-GET   | "/"                                     | Check whether the API is running
-GET   | "/event"                                | View event details and registration statistics
-POST  | "/register"                             | Register a participant
-GET   | "/registrations"                        | List all registrations
-GET   | "/registrations/{registration_id}"      | Retrieve a registration by ID
-GET   | "/registrations/email/{email}"          | Retrieve a registration by email
+* GET `/registrations` – Get all registrations
+
+* GET `/registrations/{id}` – Get a registration by ID
+
+* GET `/stats` – Get registration statistics
+
 
 Example Registration Request
 
