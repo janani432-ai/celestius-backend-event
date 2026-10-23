@@ -23,21 +23,6 @@ Tech Stack
 - Pytest — automated testing
 - HTTPX — API test client dependency
 
-Project Structure
-
-celestius backend event/
-├── app/
-│   ├── __init__.py
-│   ├── config.py
-│   ├── database.py
-│   ├── main.py
-│   ├── models.py
-│   └── schemas.py
-├── tests/
-│   └── test_main.py
-├── .gitignore
-├── requirements.txt
-└── README.md
 
 Setup and Installation
 
@@ -118,9 +103,3 @@ Design Notes
 - Capacity management: The API checks the configured participant limit before accepting registrations.
 - Testing isolation: Automated tests use a separate in-memory SQLite database to avoid modifying the local registration database.
 
-Future Improvements
-
-- Pagination for registration listings
-- Authentication for administrative operations
-- Database migrations
-- Deployment to a cloud hosting platform
